@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STO</title>
+    <title>EnergoTruck</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <header class="header">
@@ -24,7 +25,25 @@
             </ul>
           </nav>
 
-          <button class="button modal-btn-open" type="button">Зв'язатися</button>
+          <button class="burger-button" type="button" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <a href="tel:+380677631435" class="header-phone">
+            <svg class="phone-icon" viewBox="0 0 24 24">
+              <path
+                d="M6.6 10.8c1.6 3.1 3.5 5 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3
+                  1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1
+                  C10.7 22 2 13.3 2 2c0-.6.4-1 1-1h4.5c.6 0 1 .4 1 1
+                  0 1.3.2 2.5.6 3.7.1.4 0 .8-.3 1.1L6.6 10.8z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <span class="phone-number">+38 (067) 763-14-35</span>
+          </a>
         </div>
       </div>
     </header>
@@ -50,41 +69,98 @@
       <section class="services-section" id="services">
         <div class="container">
           <p class="section-label">Послуги</p>
+
           <h2 class="section-title">Що ми робимо</h2>
+
           <p class="section-description">
-            Ми виконуємо широкий спектр ремонтних робіт та підбираємо оптимальні рішення для кожного
-            ремонту, працюючи з якісними запчастинами.
+            Ми виконуємо широкий спектр ремонтних робіт для вантажних автомобілів, причепів та
+            напівпричепів. Проводимо точну діагностику несправностей і підбираємо оптимальні рішення
+            для кожного ремонту.
           </p>
 
           <div class="services-list">
             <article class="service-card">
+              <span class="service-card__number">01</span>
+
               <div class="service-card__content">
-                <h3 class="service-card__title">Ремонт двигуна та трансмісії</h3>
+                <h3 class="service-card__title">Ремонт двигунів та КПП</h3>
                 <p class="service-card__text">
-                  Діагностика, ремонт та капітальний ремонт двигунів і коробок передач вантажного
-                  транспорту.
+                  Діагностика, обслуговування та капітальний ремонт двигунів і коробок передач
+                  вантажних автомобілів. Виконуємо повне відновлення агрегатів із використанням
+                  якісних комплектуючих.
                 </p>
               </div>
             </article>
 
             <article class="service-card">
+              <span class="service-card__number">02</span>
+
               <div class="service-card__content">
-                <h3 class="service-card__title">Ходова частина та гальмівна система</h3>
+                <h3 class="service-card__title">Ходова частина, гальма та електрика</h3>
                 <p class="service-card__text">
-                  Ремонт підвіски, гальмівних механізмів та елементів ходової частини для безпечного
-                  руху.
+                  Ремонт підвіски, гальмівної системи та електрообладнання вантажного транспорту.
+                  Проводимо комплексну діагностику та усуваємо несправності для безпечної роботи
+                  автомобіля.
                 </p>
               </div>
             </article>
 
             <article class="service-card">
+              <span class="service-card__number">03</span>
+
               <div class="service-card__content">
-                <h3 class="service-card__title">Електрика та технічні роботи</h3>
+                <h3 class="service-card__title">Токарні роботи</h3>
                 <p class="service-card__text">
-                  Діагностика електрообладнання та виконання токарних робіт для відновлення деталей.
+                  Виготовлення та відновлення деталей на токарному обладнанні. Точна обробка металу
+                  для ремонту вузлів, механізмів та агрегатів вантажної техніки.
                 </p>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container about-container">
+          <div class="about-image">
+            <img src="./images/truck.webp" alt="СТО EnergoTruck" />
+          </div>
+
+          <div class="about-text">
+            <h2 class="about-title">Коротко про нас</h2>
+
+            <p class="about-description about-description--strong">
+              EnergoTruck — сервісний центр у Хмельницькому, що спеціалізується на ремонті та
+              обслуговуванні вантажного транспорту, причепів і напівпричепів.
+            </p>
+
+            <p class="about-description">
+              Ми розуміємо, наскільки важливо для перевізників уникати простоїв, тому працюємо
+              швидко, точно та відповідально. Наше завдання — повернути техніку на дорогу в
+              найкоротші строки.
+            </p>
+
+            <p class="about-description">
+              Працюємо як з транспортними компаніями, так і з приватними власниками, забезпечуючи
+              якісний ремонт, діагностику та індивідуальний підхід до кожного клієнта.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <span class="about-feature__number">01</span>
+                <p>Спеціалізація на вантажному транспорті</p>
+              </div>
+
+              <div class="about-feature">
+                <span class="about-feature__number">02</span>
+                <p>Досвідчені майстри та сучасне обладнання</p>
+              </div>
+
+              <div class="about-feature">
+                <span class="about-feature__number">03</span>
+                <p>Швидке обслуговування без зайвих простоїв</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -100,104 +176,233 @@
               <div class="swiper-slide"><img src="./images/brands/scania.png" alt="Scania" /></div>
               <div class="swiper-slide"><img src="./images/brands/inveco.png" alt="Inveco" /></div>
               <div class="swiper-slide">
-                <img src="./images/brands/renault.jpg" alt="Renault" />
+                <img src="./images/brands/renault.png" alt="Renault" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="about-section" id="about">
-        <div class="container about-container">
-          <div class="about-text">
-            <p class="section-label">Про нас</p>
-            <h2 class="section-title">Про сервіс EnergoTruck</h2>
-
-            <p class="about-description">
-              EnergoTruck — це сервісний центр, що спеціалізується на обслуговуванні та ремонті
-              вантажного транспорту у Хмельницькому. Ми розуміємо, наскільки важливо для
-              перевізників, щоб техніка працювала стабільно та без простоїв.
-            </p>
-
-            <p class="about-description">
-              Наш сервіс орієнтований як на транспортні компанії, так і на приватних водіїв. Ми
-              прагнемо забезпечити швидке та якісне обслуговування, щоб вантажівка якомога швидше
-              повернулася на дорогу.
-            </p>
-
-            <ul class="about-list">
-              <li>Спеціалізація на вантажному транспорті</li>
-              <li>Досвідчені майстри</li>
-              <li>Сучасне обладнання для діагностики</li>
-              <li>Індивідуальний підхід до кожного клієнта</li>
-            </ul>
-          </div>
-
-          <div class="about-image">
-            <img src="./images/service.jpg" alt="СТО EnergoTruck" />
-          </div>
-        </div>
-      </section>
-      <section class="location-section" id="location">
+      <section class="process process--timeline">
         <div class="container">
-          <div class="location-wrapper">
-            <div class="location-content">
-              <p class="section-label">Місцезнаходження</p>
-              <h2 class="section-title location-title">Як нас знайти</h2>
+          <p class="process-subtitle">
+            Від звернення до готового автомобіля — у кілька простих кроків
+          </p>
+          <h2 class="process-title">Як ми працюємо</h2>
 
-              <div class="location-info">
-                <p class="location-text">
-                  <strong>Адреса:</strong><br />
-                  Хмельницька обл, Хмельницький р-н, сщ. Богданівці, <br />
-                  вул. Першотравнева 1/4
-                </p>
-
-                <p class="location-text">
-                  <strong>Графік роботи:</strong><br />
-                  9:00–18:00 з понеділка по суботу,<br />
-                  неділя — за домовленістю
+          <div class="v-timeline">
+            <div class="v-timeline__item">
+              <div class="v-timeline__marker">
+                <div class="step-icon">
+                  <i data-lucide="phone-call"></i>
+                </div>
+              </div>
+              <div class="v-timeline__content">
+                <h3>Дзвінок або Viber</h3>
+                <p>
+                  Зв’яжіться з нами телефоном або у Viber, щоб описати проблему та домовитися про
+                  огляд авто.
                 </p>
               </div>
             </div>
 
-            <div class="location-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2597.7267299214623!2d27.147863299999997!3d49.3762435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473206559130070b%3A0xd189ff838322acf7!2z0JPRgNGD0L_QsCDQutC-0LzQv9Cw0L3RltC5ICLQkNCz0YDQvtC90L7QstCw0YbRltGPIg!5e0!3m2!1suk!2sua!4v1772975792113!5m2!1suk!2sua"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen
-              >
-              </iframe>
+            <div class="v-timeline__item">
+              <div class="v-timeline__marker">
+                <div class="step-icon">
+                  <i data-lucide="search-check"></i>
+                </div>
+              </div>
+              <div class="v-timeline__content">
+                <h3>Діагностика</h3>
+                <p>
+                  Проводимо огляд та визначаємо причину несправності, щоб зрозуміти обсяг робіт.
+                </p>
+              </div>
+            </div>
+
+            <div class="v-timeline__item">
+              <div class="v-timeline__marker">
+                <div class="step-icon">
+                  <i data-lucide="badge-dollar-sign"></i>
+                </div>
+              </div>
+              <div class="v-timeline__content">
+                <h3>Узгодження</h3>
+                <p>
+                  Погоджуємо вартість, список робіт і необхідні запчастини перед початком ремонту.
+                </p>
+              </div>
+            </div>
+
+            <div class="v-timeline__item">
+              <div class="v-timeline__marker">
+                <div class="step-icon">
+                  <i data-lucide="wrench"></i>
+                </div>
+              </div>
+              <div class="v-timeline__content">
+                <h3>Ремонт</h3>
+                <p>Виконуємо ремонтні роботи та контролюємо якість на кожному етапі.</p>
+              </div>
+            </div>
+
+            <div class="v-timeline__item">
+              <div class="v-timeline__marker">
+                <div class="step-icon">
+                  <i data-lucide="truck"></i>
+                </div>
+              </div>
+              <div class="v-timeline__content">
+                <h3>Видача авто</h3>
+                <p>Після завершення робіт ви отримуєте готовий автомобіль.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="booking-section" id="booking">
-        <div class="container booking-container">
-          <p class="section-label">Запис</p>
-          <h2 class="section-title">Запис на ремонт</h2>
-          <p class="booking-text">
-            Щоб записатися на обслуговування або уточнити деталі ремонту, зателефонуйте нам або
-            напишіть у Viber. Ми підберемо зручний час та проконсультуємо щодо вашого запиту.
-          </p>
+      <section class="contacts-section" id="contacts">
+        <div class="container contacts-container">
+          <div class="contacts-content">
+            <p class="contacts-subtitle">Контакти</p>
+            <h2 class="contacts-title">Як нас знайти та записатись</h2>
 
-          <div class="booking-actions">
-            <a href="tel:+380677631435" class="booking-button">Подзвонити</a>
-            <a
-              href="viber://chat?number=%2B380677631435"
-              class="booking-button booking-button--outline"
-            >
-              Написати у Viber
-            </a>
+            <div class="contacts-list">
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.47-1.29a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92Z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="contact-item__content">
+                  <h3>Телефон</h3>
+                  <p>Для консультації та запису на ремонт</p>
+                  <a href="tel:+380677631435" class="contact-item__link"> +38 (067) 763–14–35 </a>
+                  Віталій
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M8 20l-4 1 1-4M5 16.5C3.73 15 3 13.12 3 11c0-4.97 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9c-1.62 0-3.14-.37-4.5-1.03"
+                    />
+                    <path
+                      d="M8.5 8.5c.3-.4.7-.5 1.1-.3l1 .5c.4.2.6.7.5 1.1l-.2 1c.5 1 1.3 1.8 2.3 2.3l1-.2c.4-.1.9.1 1.1.5l.5 1c.2.4.1.8-.3 1.1-.6.4-1.3.6-2 .6-2.9 0-5.5-2.6-5.5-5.5 0-.7.2-1.4.5-2Z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="contact-item__content">
+                  <h3>Viber</h3>
+                  <p>Зв'яжіться через месенджер</p>
+                  <a href="viber://chat?number=%2B380677631435" class="contact-item__link">
+                    Написати
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+
+                <div class="contact-item__content">
+                  <h3>Адреса</h3>
+                  <p>
+                    Хмельницька обл., Хмельницький р-н, <br />
+                    сщ. Богданівці, вул. Першотравнева 1/4
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/J3565FiP2Z6GGh3QA?g_st=iv"
+                    target="_blank"
+                    class="contact-item__link"
+                  >
+                    Відкрити на карті
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 3" />
+                  </svg>
+                </div>
+
+                <div class="contact-item__content">
+                  <h3>Графік роботи</h3>
+                  <p>
+                    Понеділок – субота: 9:00–18:00<br />
+                    Неділя — за домовленістю
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="booking-contact">
-            <strong>Віталій</strong><br />
-            <a href="tel:+380677631435">+38 (067) 763-14-35</a>
+          <div class="contacts-map-wrap">
+            <iframe
+              class="contacts-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2597.7267299214623!2d27.147863299999997!3d49.3762435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473206559130070b%3A0xd189ff838322acf7!2z0JPRgNGD0L_QsCDQutC-0LzQv9Cw0L3RltC5ICLQkNCz0YDQvtC90L7QstCw0YbRltGPIg!5e0!3m2!1suk!2sua!4v1772975792113!5m2!1suk!2sua"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            >
+            </iframe>
           </div>
         </div>
       </section>
+
+      <script>
+        lucide.createIcons();
+      </script>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-column footer-brand">
+          <img src="./images/logo.png" alt="EnergoTruck logo" class="footer-logo" />
+          <p class="footer-text">Сервіс та ремонт вантажного транспорту у Хмельницькому.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Навігація</h3>
+          <ul class="footer-list">
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-title">Контакти</h3>
+          <p class="footer-contact">
+            <a href="tel:+380677631435">+38 (067) 763-14-35</a>
+          </p>
+          <p class="footer-contact">
+            Хмельницька обл, Хмельницький р-н,<br />
+            сщ. Богданівці, вул. Травнева 1/4
+          </p>
+          <p class="footer-contact">
+            Пн–Сб: 9:00–18:00<br />
+            Нд — за домовленістю
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 EnergoTruck. Всі права захищені.</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/modal.js"></script>
   </body>

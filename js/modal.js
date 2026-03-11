@@ -27,3 +27,20 @@ const swiper = new Swiper('.brands-slider', {
     },
   },
 });
+
+const burgerButton = document.querySelector('.burger-button');
+const headerNav = document.querySelector('.header__nav');
+
+burgerButton.addEventListener('click', () => {
+  burgerButton.classList.toggle('is-open');
+  headerNav.classList.toggle('is-open');
+});
+
+/* закривати меню при скролі */
+
+window.addEventListener('scroll', () => {
+  if (headerNav.classList.contains('is-open')) {
+    burgerButton.classList.remove('is-open');
+    headerNav.classList.remove('is-open');
+  }
+});
