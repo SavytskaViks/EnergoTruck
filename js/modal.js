@@ -10,8 +10,8 @@ const swiper = new Swiper('.brands-slider', {
   },
   breakpoints: {
     0: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
     480: {
       slidesPerView: 3,
